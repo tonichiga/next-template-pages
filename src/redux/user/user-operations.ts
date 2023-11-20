@@ -1,5 +1,5 @@
 import userActions from "./user-actions";
-import userApi from "@/api/crm-user-api";
+import userApi from "@/api/user-api";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 const login = createAsyncThunk(userActions.login.type, userApi.login);
