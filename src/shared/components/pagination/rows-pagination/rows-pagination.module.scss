@@ -1,0 +1,14 @@
+.rows_count {
+  display: flex;
+  align-items: center;
+  // gap: 12px;
+
+  @apply gap-rem-[12px];
+  p {
+    // font-size: 14px;
+    font-weight: 500;
+    color: black;
+
+    @apply text-rem-[14px];
+  }
+}

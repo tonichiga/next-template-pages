@@ -1,0 +1,52 @@
+const routeName = {
+  HOME: {
+    ROOT: "/",
+    SALE: "/sales",
+    RETENTION: "/retention",
+    CHAT: "/chat",
+    CALENDAR: "/calendar",
+  },
+  FINANCE: {
+    ROOT: "/finance",
+    KYC: "/finance/kyc-aml",
+    DEPOSIT: "/finance/deposits",
+    WITHDRAWAL: "/finance/withdrawals",
+  },
+  TRADING: {
+    ROOT: "/trading",
+    AUTO_TRADERS: "/trading/auto-trades",
+    CFD_ACCOUNTS: "/trading/cfd-accounts",
+    OPEN_CFD_ORDERS: "/trading/open-cfd-order",
+    CFD_ORDERS_HISTORY: "/trading/cfd-orders-history",
+    SYMBOLS: "/trading/symbols",
+    SYMBOL_GROUP: "/trading/symbol-groups",
+    SYMBOL_SETTINGS: "/trading/symbol-settings",
+  },
+  REPORTS: {
+    ROOT: "/reports",
+    SALES_DASHBOARD: "/reports/sales-dashboard",
+    AFFILIATE_DASHBOARD: "/reports/affilate-dashboard",
+    ACTIVITY_CLIENTS: "/reports/activity-clients",
+    ACTIVITY_CRM_USERS: "/reports/activity-crm-users",
+  },
+  SETTINGS: {
+    ROOT: "/settings",
+    CRM_USERS: "/settings/crm-users",
+    TEAM: "/settings/team",
+    HIERARCHY: "/settings/hierarchy",
+    AFFILIATES: "/settings/affiliates",
+    SECURITY: "/settings/security",
+    VOIP: "/settings/voip",
+    SMTP: "/settings/smtp",
+    PSP: "/settings/psp",
+    WITHDRAWALS_METHOD: "/settings/withdrawals-method",
+    OTHER_PSP: "/settings/other-psps",
+    STATUSES: "/settings/statuses",
+    EMAIL_TEMPLATES: "/settings/email-templates",
+    VARIABLES: "/settings/variables",
+    CURRENCIES: "/settings/currencies",
+    TRAFFIC_HISTORY: "/settings/traffic-history",
+  },
+};
+
+export default routeName;

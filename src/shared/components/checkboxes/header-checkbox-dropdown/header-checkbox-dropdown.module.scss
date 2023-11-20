@@ -1,0 +1,14 @@
+.checkbox {
+  display: grid;
+  grid-template-rows: 36px 0fr;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.checkbox[data-open="true"] {
+  grid-template-rows: 36px 1fr;
+}
+
+.checkbox_body {
+  overflow: hidden;
+}

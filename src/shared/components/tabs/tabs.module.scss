@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  gap: 11px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+  p {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @apply text-gray-30;
+}
+
+.line {
+  width: 234px;
+  height: 2px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  @apply bg-gray-15;
+}
+
+.hide {
+  input {
+    display: none;
+  }
+  input:checked + label {
+    @apply text-blue-500;
+    .line {
+      @apply bg-blue-500;
+    }
+  }
+}

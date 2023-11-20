@@ -1,0 +1,74 @@
+.button_container {
+  position: relative;
+  display: flex;
+  // height: 44px;
+  width: 100%;
+  // padding: 4px;
+  overflow-x: auto;
+
+  @apply h-rem-[44px] p-rem-[4px]  rounded-rem-[6px];
+
+  .selector_button {
+    // padding-left: 26px;
+    // padding-right: 26px;
+    // border-radius: 4px;
+    font-weight: 600;
+    // font-size: 14px;
+    // line-height: 20px;
+    transition: all 300ms ease-in-out;
+
+    @apply pl-rem-[26px] pr-rem-[26px] text-rem-[14px] leading-rem-[20px];
+  }
+
+  .background_indicator {
+    // border-radius: 4px;
+
+    @apply rounded-rem-[4px];
+  }
+}
+
+.small_container {
+  // height: 36px;
+
+  @apply h-rem-[36px];
+
+  .selector_button {
+    // border-radius: 6px;
+    // padding-left: 38px;
+    // padding-right: 38px;
+    font-weight: 600;
+    // font-size: 12px;
+    // line-height: 16px;
+
+    @apply pl-rem-[38px] pr-rem-[38px] text-rem-[12px] leading-rem-[16px] rounded-rem-[6px];
+  }
+
+  .background_indicator {
+    // border-radius: 6px;
+
+    @apply rounded-rem-[6px];
+  }
+}
+
+.selector_button {
+  width: max-content;
+
+  height: 100%;
+
+  z-index: 5;
+  white-space: nowrap;
+  @apply text-gray-30;
+}
+
+.active {
+  @apply text-black;
+}
+
+.background_indicator {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  height: calc(100% - 0.5rem);
+  transition: all 0.3s ease-in-out;
+  @apply bg-white shadow-selector_tab;
+}

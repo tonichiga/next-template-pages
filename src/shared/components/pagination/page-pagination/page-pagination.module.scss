@@ -1,0 +1,44 @@
+.change_page {
+  display: flex;
+  align-items: center;
+  // gap: 12px;
+
+  @apply gap-rem-[12px];
+  p {
+    // font-size: 14px;
+    font-weight: 500;
+    color: black;
+
+    @apply text-rem-[14px];
+  }
+}
+
+.input_container {
+  display: flex;
+  // gap: 10px;
+
+  @apply gap-rem-[10px];
+}
+.arrow_button {
+  svg {
+    // width: 16px;
+    // height: 16px;
+
+    @apply w-rem-[16px] h-rem-[16px];
+  }
+}
+.input_page {
+  -moz-appearance: textfield;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  // width: 50px;
+  // height: 36px;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+  @apply bg-white border-[1px] border-gray-15 rounded-rem-[6px] text-rem-[14px] font-400 text-black w-rem-[50px] h-rem-[36px];
+}
